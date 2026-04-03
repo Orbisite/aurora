@@ -4,7 +4,7 @@
  * Avec multi-pages (`pages` dans le JSON), l’ordre des blocs peut être surchargé par route via `sections`.
  */
 import { resolveForLocale } from '../utils/localeUtils'
-import { buildGalleryItemsForLocale, extractContentImages } from '../utils/siteImages'
+import { extractContentImages } from '../utils/siteImages'
 
 export const DEFAULT_SECTION_ORDER = [
   'navbar',
@@ -41,7 +41,7 @@ export function buildPageConfig(content, locale = 'fr', onLocaleChange = () => {
   const testimonials = resolveForLocale(locale, content.testimonials)
   const gallerySection = resolveForLocale(locale, content.gallery)
   const footer = resolveForLocale(locale, content.footer)
-  const galleryItems = buildGalleryItemsForLocale(content, locale)
+  const galleryItems = (images.gallery ?? []).map((src) => ({ src, alt: '' }))
 
   const blocks = {
     navbar: () => ({
