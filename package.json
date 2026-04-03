@@ -1,10 +1,10 @@
 {
-  "name": "orbisite-site-aurora",
+  "name": "mei",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "orbisite": {
-    "ghPagesBase": "/aurora/"
+    "ghPagesBase": "/mei/"
   },
   "scripts": {
     "dev": "vite",

@@ -13,7 +13,7 @@ export const siteConfig = {
   },
 
   meta: {
-    title: 'Aurora — modèle clair',
+    title: 'Mei — modèle clair',
     description: 'Site modèle multi-pages, thème clair minimal.',
     siteUrl: 'https://example.com',
   },

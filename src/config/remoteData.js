@@ -1,9 +1,9 @@
 /**
- * Par défaut : dépôt `aurora-api` (JSON via raw.githubusercontent.com).
+ * Par défaut : dépôt `mei-api` (JSON via raw.githubusercontent.com).
  */
 const MODEL_RAW =
   import.meta.env.VITE_MODEL_RAW_BASE ??
-  'https://raw.githubusercontent.com/Orbisite/aurora-api/main'
+  'https://raw.githubusercontent.com/Orbisite/mei-api/main'
 
 export const CONTENT_URL =
   import.meta.env.VITE_CONTENT_URL ?? `${MODEL_RAW}/content.json`

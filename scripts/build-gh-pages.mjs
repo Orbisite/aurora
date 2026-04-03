@@ -27,7 +27,7 @@ if (!base) {
 if (!base) {
   console.error(
     'build-gh-pages: ajoutez `"orbisite": { "ghPagesBase": "/nom-du-repo/" }` dans package.json,\n' +
-      'ou définissez VITE_BASE=/nom-du-repo/ (ex. /aurora/ pour https://org.github.io/aurora/).\n' +
+      'ou définissez VITE_BASE=/nom-du-repo/ (ex. /mei/ pour https://org.github.io/mei/).\n' +
       'Sous GitHub Actions, GITHUB_REPOSITORY est défini automatiquement.',
   )
   process.exit(1)
