@@ -60,6 +60,10 @@ export function buildPageConfig(content, locale = 'fr', onLocaleChange = () => {
         onLocaleChange,
         spaLinkComponent,
         logoHref,
+        variant: nav.variant ?? 'bar',
+        linkDensity: nav.linkDensity,
+        navPadding: nav.navPadding,
+        contentWidth: nav.contentWidth,
       },
     }),
     hero: () => ({
@@ -74,6 +78,10 @@ export function buildPageConfig(content, locale = 'fr', onLocaleChange = () => {
         color: 'primary',
         imageUrl: images.hero,
         imageAlt: hero.imageAlt,
+        overlapFloatingNavbar:
+          hero.overlapFloatingNavbar !== undefined && hero.overlapFloatingNavbar !== null ?
+            hero.overlapFloatingNavbar
+          : nav.variant === 'floating',
       },
     }),
     features: () => ({
